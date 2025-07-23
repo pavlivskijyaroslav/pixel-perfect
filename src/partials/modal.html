@@ -1,0 +1,33 @@
+<div class="modal">
+    <div class="modal-wrapper">
+        <button type="button" class="modal-close-btn">
+            X
+        </button>
+        <form action="" class="modal-form">
+            <div class="modal-form-title">
+                <h2 class="title">Join Now!</h2>
+                <p class="modal-form-text">One Session</p>
+                <span class="modal-form-output">0</span>
+            </div>
+            <div class="input-user-wrapper">
+                <div class="modal-form-field">
+                    <label for="user-name" class="modal-form-label">Your Name</label>
+                    <input type="text" id="user-name" class="modal-form-input" placeholder="Your Name" required>
+                </div>
+                <div class="input-contact-wrapper">
+                    <div class="modal-form-field ">
+                        <label for="user-email" class="modal-form-label">Email</label>
+                        <input type="email" id="user-email" class="modal-form-input" placeholder="Email"
+                            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
+                        <p class="text-invalid">Error Text</p>
+                    </div>
+                    <div class="modal-form-field">
+                        <label for="user-phone" class="modal-form-label">Phone number</label>
+                        <input type="tel" id="user-phone" class="modal-form-input" placeholder="Phone number" required>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="join-btn modal-join-btn">Go to checkout</button>
+        </form>
+    </div>
+</div>
