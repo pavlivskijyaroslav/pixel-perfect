@@ -1,13 +1,15 @@
 <div class="modal">
     <div class="modal-wrapper">
-        <button type="button" class="modal-close-btn">
-            X
+        <button type="button" class="modal-close-btn" data-close>
+            <svg class="" width="14px" height="14px">
+                <use href="../img/sprite/icons.svg#icon-close"></use>
+            </svg>
         </button>
         <form action="" class="modal-form">
             <div class="modal-form-title">
                 <h2 class="title">Join Now!</h2>
                 <p class="modal-form-text">One Session</p>
-                <span class="modal-form-output">0</span>
+                <span class="modal-form-output" id="output">0</span>
             </div>
             <div class="input-user-wrapper">
                 <div class="modal-form-field">
