@@ -13,6 +13,7 @@ body {
   color: #0d0b0a;
 }
 .join-btn {
+  cursor: pointer;
   font-family: 'Sarabun', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -23,4 +24,9 @@ body {
   border-radius: 100px;
   padding: 4px 22px;
   width: 74px;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.join-btn:hover {
+  border: 1px solid #c2d9fc;
+  opacity: 0.5;
 }
