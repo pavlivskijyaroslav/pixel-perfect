@@ -1,0 +1,124 @@
+:root {
+  --color-neutral-darkest: #0d0b0a;
+  --color-hawkes-blue-lighter: #dfebeb;
+  --font-family: 'Sarabun', sans-serif;
+  --second-family: 'Cabin', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--color-hawkes-blue-lighter);
+  color: var(--color-neutral-darkest);
+}
+
+.yoga-gallery {
+  background-color: var(--color-hawkes-blue-lighter);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--color-neutral-darkest);
+  margin: 0;
+}
+
+.yoga-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--color-neutral-darkest);
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.yoga-photo-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.yoga-photo-item {
+  display: flex;
+  justify-content: center;
+}
+
+.yoga-photo-img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  display: block;
+}
+
+.header-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 112px;
+  margin-bottom: 80px;
+}
+
+@media (min-width: 375px) {
+  .yoga-photo-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .yoga-photo-img {
+    width: 155.5px;
+    height: 155.5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 40px;
+  }
+
+  .yoga-photo-list {
+    grid-template-columns: repeat(2, 1fr);
+    width: 704px;
+  }
+
+  .yoga-photo-img {
+    width: 340px;
+    height: 290.67px;
+  }
+}
+
+@media (min-width: 1336px) {
+  .yoga-gallery {
+    width: 1440px;
+    height: 1368px;
+  }
+
+  .title {
+    font-size: 52px;
+  }
+
+  .yoga-photo-list {
+    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .yoga-photo-item,
+  .yoga-photo-img {
+    width: 421.33px;
+    height: 448px;
+  }
+}
