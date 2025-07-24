@@ -58,6 +58,9 @@ img {
     text-align: center;
 
 }
+.feedback-text-wrap{
+    margin-bottom: 32px;
+}
 .feedback-image-wrap{
     text-align: center;
 }
@@ -75,9 +78,6 @@ img {
     }
     .feedback-title{
         margin-bottom: 24px;
-    }
-    .feedback-list-item{
-        padding: 30px 12px;
     }
 }
 @media only screen and (min-width: 1336px){
