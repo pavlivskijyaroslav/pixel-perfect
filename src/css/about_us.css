@@ -1,0 +1,164 @@
+/* mobile */
+.about {
+  background-color: #dfebeb;
+}
+/* .container {
+  max-width: 375px;
+  width: 100%;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 16px;
+} */
+
+.about-wrap {
+  padding-top: 64px;
+  margin-bottom: 40px;
+  max-width: 343px;
+  margin-right: 0;
+  margin-left: 0;
+  text-align: center;
+}
+
+.about-title {
+  /* font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #0d0b0a; */
+  margin-bottom: 20px;
+}
+.about-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: #0d0b0a;
+  margin-bottom: 48px;
+}
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  margin-bottom: 40px;
+}
+.about-list-item {
+  width: 100%;
+}
+.about-item-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #0d0b0a;
+  margin-bottom: 20px;
+}
+.about-list-item-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: #0d0b0a;
+}
+
+.about-link {
+  display: none;
+}
+
+.about-link-mob {
+  width: 100%;
+  height: 46px;
+
+  display: block;
+
+  text-align: center;
+
+  margin: 0 auto;
+  margin-bottom: 64px;
+}
+
+/* tablet */
+
+@media (min-width: 768px) {
+  /* .container {
+    max-width: 768px;
+  } */
+
+  .about-wrap {
+    max-width: 704px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+  }
+
+  .about {
+    background-color: #f2fafa;
+  }
+  .about-title {
+    margin-bottom: 24px;
+  }
+
+  .about-text {
+    margin-bottom: 40px;
+  }
+
+  .about-list {
+    gap: 24px 24px;
+  }
+
+  .about-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .about-link {
+    display: block;
+    border: 1px solid #c2d9fc;
+    border-radius: 100px;
+    padding: 10px 24px;
+    width: 110px;
+    height: 46px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #0d0b0a;
+    text-align: center;
+    background-color: #c2d9fc;
+    margin-top: 40px;
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: auto;
+    white-space: nowrap;
+    margin-bottom: 40px;
+  }
+
+  .about-link-mob {
+    display: none;
+  }
+
+  .join-btn {
+    display: none;
+  }
+}
+
+/* desktop */
+@media (min-width: 1336px) {
+  .about-wrap {
+    max-width: 768px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 112px;
+  }
+
+  .about-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .about-list-item {
+    width: calc((100% - 3 * 24px) / 4);
+  }
+  .about-link {
+    margin-bottom: 112px;
+  }
+}
