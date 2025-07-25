@@ -20,9 +20,6 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 24px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
   justify-content: center;
 }
 
@@ -31,7 +28,7 @@
   justify-content: center;
 }
 
-.yoga-photo-img {
+.yoga-picture {
   border-radius: 16px;
   object-fit: cover;
 }
@@ -54,7 +51,7 @@
     padding: 64px 0px;
   }
 
-  .yoga-photo-img {
+  .yoga-picture {
     width: 155.5px;
     height: 155.5px;
   }
@@ -74,7 +71,7 @@
     width: 704px;
   }
 
-  .yoga-photo-img {
+  .yoga-picture {
     width: 340px;
     height: 290.67px;
   }
@@ -95,7 +92,7 @@
   }
 
   .yoga-photo-item,
-  .yoga-photo-img {
+  .yoga-picture {
     width: 421.33px;
     height: 448px;
   }
