@@ -1,6 +1,8 @@
 /* mobile */
 .about {
   background-color: #dfebeb;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 /* .container {
   max-width: 375px;
@@ -11,8 +13,7 @@
 } */
 
 .about-wrap {
-  padding-top: 64px;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
   max-width: 343px;
   margin-right: 0;
   margin-left: 0;
@@ -34,18 +35,18 @@
   line-height: 1.6;
   text-align: center;
   color: #0d0b0a;
-  margin-bottom: 48px;
 }
 .about-list {
   display: flex;
   flex-wrap: wrap;
   gap: 48px;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 }
 .about-list-item {
   width: 100%;
 }
 .about-item-title {
+  white-space: nowrap;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.4;
@@ -62,20 +63,16 @@
   color: #0d0b0a;
 }
 
-.about-link {
+.about-join-btn-tablet {
   display: none;
 }
 
-.about-link-mob {
+.about-join-btn-mobile {
   width: 100%;
   height: 46px;
-
-  display: block;
-
+  display: inline-block;
   text-align: center;
-
   margin: 0 auto;
-  margin-bottom: 64px;
 }
 
 /* tablet */
@@ -84,6 +81,11 @@
   /* .container {
     max-width: 768px;
   } */
+  .about {
+    background-color: #f2fafa;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 
   .about-wrap {
     max-width: 704px;
@@ -92,9 +94,6 @@
     margin-top: 40px;
   }
 
-  .about {
-    background-color: #f2fafa;
-  }
   .about-title {
     margin-bottom: 24px;
   }
@@ -111,7 +110,7 @@
     width: calc((100% - 24px) / 2);
   }
 
-  .about-link {
+  .join-btn-tablet {
     display: block;
     border: 1px solid #c2d9fc;
     border-radius: 100px;
@@ -129,25 +128,32 @@
     margin-right: auto;
     margin-left: auto;
     white-space: nowrap;
-    margin-bottom: 40px;
   }
 
-  .about-link-mob {
+  .about-join-btn-mobile {
     display: none;
   }
 
-  .join-btn {
-    display: none;
+  .about-join-btn-tablet {
+    display: inline;
   }
 }
 
 /* desktop */
 @media (min-width: 1336px) {
+  .about {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
   .about-wrap {
     max-width: 768px;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 112px;
+  }
+
+  .about-item-title {
+    white-space: wrap;
   }
 
   .about-list {
@@ -158,7 +164,8 @@
   .about-list-item {
     width: calc((100% - 3 * 24px) / 4);
   }
-  .about-link {
-    margin-bottom: 112px;
-  }
+
+  /* .about-join-btn-mobile {
+    display: none;
+  } */
 }
