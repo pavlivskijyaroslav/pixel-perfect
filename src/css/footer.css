@@ -1,29 +1,19 @@
-/* ==============================================================Footer================================================= */
 .footer {
-    
     background: #f8fbfe;
+    padding: 32px 16px;
 }
 
 .footer__container {
     border: 0px solid rgba(13, 11, 10, 0.15);
     border-radius: 16px;
-    padding: 32px;
+    padding: 0;
 }
 
 .footer__block {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 20px;
     margin-bottom: 20px;
-
-}
-
-.footer__logo {
-    display: inline-block;
-    line-height: 1;
-    margin-top: 0;
-    margin-left: 0;
 }
 
 .footer__logo-item {
@@ -31,113 +21,42 @@
     height: 36px;
 }
 
-
-.footer__text {
-    width: 279px;
+.footer__text,
+.footer__text-privacy {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
     color: #0d0b0a;
-    margin-bottom: 48px;
+}
+
+.footer__text {
+    width: 100%;
+    margin-bottom: 24px;
 }
 
 .footer__text-privacy {
-    font-weight: 400;
-    line-height: 1.6;
-    color: #0d0b0a;
+    font-size: 12px;
 }
 
 .footer__title {
     font-weight: 600;
     font-size: 16px;
-    line-height: 1.6;
-    color: #0d0b0a;
+    margin-bottom: 8px;
 }
 
 .subscribe__form {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    margin-bottom: 12px;
-}
-
-@media (min-width: 768px) {
-
-
-    .footer {
-        padding: 40px 32px;
-
-    }
-    .footer__container {
-       display: flex;
-       flex-wrap: wrap;
-       gap: 40px;
-
-         }
-
-    .footer__logo-item {
-        margin: 0 auto;
-    }
-
-    
-    .footer__input {
-        flex: 1;
-    }
-
-    .footer__text {
-        width: 640px;
-        margin-bottom: 24px;
-    }
-
-    .footer__title {
-        margin-bottom: 16px;
-    }
-
-    .footer__text-privacy {
-        width: 640px;
-        font-size: 12px;
-    }
-
-}
-
-@media (min-width: 1336px) {
-
-    .subscribe__form {
-        max-width: 501px;
-        gap: 16px;
-    }
-     .footer__block{
-        display: flex;
-        flex-direction: column;}
-    .footer__text {
-        max-width: 595px;
-    }
-
-   .footer__columns{ 
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    margin-left: 248px;}
-   
-}
-
-
-.subscribe__form {
-    width: 279px;
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-    /* щоб кнопка падала під інпут на мобільних */
+    gap: 12px;
+    width: 100%;
 }
 
 .footer__input {
     font-size: 16px;
-    flex-grow: 1;
-    /* займає доступне місце */
     border-radius: 12px;
     padding: 8px 12px;
     height: 42px;
-    
+    width: 100%;
 }
 
 .footer__input:focus:invalid,
@@ -146,8 +65,8 @@
 }
 
 .footer__input:focus {
-    border: 1px solid rgba(255, 255, 255, 0);
     background: rgba(13, 11, 10, 0.05);
+    outline: none;
 }
 
 .button__primary {
@@ -157,50 +76,27 @@
     border: 1px solid #c2d9fc;
     border-radius: 100px;
     padding: 10px 24px;
-    width: 100%;
     height: 46px;
+    width: 100%;
     background: rgba(13, 11, 10, 0.05);
 }
 
 .button__primary:hover {
-    background: rgba(13, 11, 10, 0.05);
     opacity: 0.5;
-}
-
-@media (max-width: 600px) {
-    .subscribe__form {
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .button__primary {
-        width: 100%;
-    }
-
-    .footer__input {
-        width: 100%;
-    }
-}
-
-.footer-link__item:not(:last-child) {
-    margin-bottom: 8px;
 }
 
 .footer__link,
 .footer-social__link {
-    font-weight: 400;   
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    color: inherit;
     line-height: 1.6;
-
 }
 
 .footer__link:hover,
 .footer-social__link:hover {
     text-decoration: underline;
-}
-
-.footer__social {
-    gap: 12px;
-    margin-bottom: 9px;
 }
 
 .footer__social {
@@ -216,23 +112,59 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    text-decoration: none;
-    color: inherit;
-    font-size: 16px;
-}
-
-.footer__icon {
-    flex-shrink: 0;
-    width: 24px;
-    height: 24px;
 }
 
 .footer__studio {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.6;
     color: #0d0b0a;
+    margin-top: 24px;
+}
+
+/* =========================== Tablet =========================== */
+@media (min-width: 768px) {
+    .footer {
+        padding: 40px 32px;
+    }
+
+    .footer__container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .subscribe__form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px;
+        max-width: 501px;
+    }
+
+    .footer__input {
+        flex-grow: 1;
+    }
+
+    .button__primary {
+        width: auto;
+    }
+
+    .footer__text-privacy,
+    .footer__text {
+        width: 640px;
+    }
+}
+
+/* =========================== Desktop =========================== */
+@media (min-width: 1336px) {
+    .footer__columns {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        margin-left: 248px;
+    }
+
+    .footer__text {
+        max-width: 595px;
+    }
 }
