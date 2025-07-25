@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 64px 0px;
 }
 
 .yoga-text {
@@ -18,7 +19,7 @@
 
 .yoga-photo-list {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   justify-content: center;
 }
@@ -37,9 +38,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
-
-  margin-bottom: 80px;
+  gap: 20px;
+  margin-bottom: 48px;
 }
 
 @media (min-width: 375px) {
@@ -52,8 +52,8 @@
   }
 
   .yoga-picture {
-    width: 155.5px;
-    height: 155.5px;
+    width: 155px;
+    height: 155px;
   }
 }
 
@@ -67,13 +67,12 @@
   }
 
   .yoga-photo-list {
-    grid-template-columns: repeat(2, 1fr);
     width: 704px;
   }
 
   .yoga-picture {
     width: 340px;
-    height: 290.67px;
+    height: 290px;
   }
 }
 
@@ -93,7 +92,7 @@
 
   .yoga-photo-item,
   .yoga-picture {
-    width: 421.33px;
+    width: 421px;
     height: 448px;
   }
 }
