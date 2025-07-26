@@ -15,13 +15,13 @@
     href="https://fonts.googleapis.com/css2?family=Cabin:wght@400&family=Roboto:wght@400&family=Sarabun:wght@400;500;600;700&display=swap"
     rel="stylesheet">
   <script type="module" crossorigin src="/pixel-perfect/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/pixel-perfect/assets/index-DgcYrLp4.css">
+  <link rel="stylesheet" crossorigin href="/pixel-perfect/assets/index-DbLzkq40.css">
 </head>
 
 <body>
   <header class="header">
   <div class="container header-container">
-    <button class="header-burger-btn" type="button">
+    <button class="header-burger-btn" type="button" data-burger-open>
       <svg class="header-burger-btn-icon" width="24" height="24">
         <use href="/pixel-perfect/assets/icons-DFABZ0qt.svg#icon-menu"></use>
       </svg>
@@ -30,17 +30,13 @@
     <nav class="header-nav">
       <ul class="header-nav-list">
         <li class="header-nav-list-item">
-          <a href="#yoga-classes" class="header-nav-list-item-link current"
-            >Yoga Classes</a
-          >
+          <a href="#yoga-classes" class="header-nav-list-item-link current">Yoga Classes</a>
         </li>
         <li class="header-nav-list-item">
           <a href="#team" class="header-nav-list-item-link">Team</a>
         </li>
         <li class="header-nav-list-item">
-          <a href="#testimonials" class="header-nav-list-item-link"
-            >Testimonials</a
-          >
+          <a href="#testimonials" class="header-nav-list-item-link">Testimonials</a>
         </li>
         <li class="header-nav-list-item">
           <a href="#pricing" class="header-nav-list-item-link">Pricing</a>
@@ -63,8 +59,46 @@
     </a>
   </div>
 </header>
-
-  
+  <div class="burger-menu" data-burger>
+  <div class="burger-menu-wrapper container">
+    <div class="burger-menu-nav">
+      <button type="button" class="burger-menu-close" data-burger-close>
+        <svg class="burger-menu-close-icon" width="15" height="15">
+          <use href="../image/sprite/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <a href="./index.html" class="burger-menu-logo">
+        <svg class="burger-menu-logo-icon" width="84" height="36">
+          <use href="../image/sprite/icons.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <a href="#pricing" class="burger-menu-btn">
+        Join
+        <span class="burger-menu-btn-accent">Now</span>
+      </a>
+    </div>
+    <div class="burger-menu-content">
+      <ul class="burger-menu-list">
+        <li class="burger-menu-list-item">
+          <a class="burger-menu-link" href="#classes">Yoga Classes</a>
+        </li>
+        <li class="burger-menu-list-item">
+          <a class="burger-menu-link" href="#team">Team</a>
+        </li>
+        <li class="burger-menu-list-item">
+          <a class="burger-menu-link" href="#testimonials">Testimonials</a>
+        </li>
+        <li class="burger-menu-list-item">
+          <a class="burger-menu-link" href="#pricing">Pricing</a>
+        </li>
+        <li class="burger-menu-list-item">
+          <a class="burger-menu-link" href="#contacts">Contacts</a>
+        </li>
+      </ul>
+      <a href="#pricing" class="burger-menu-bottom-btn">Join Now</a>
+    </div>
+  </div>
+</div>
 
   <main>
     <!-- Loads the specified .html file -->
