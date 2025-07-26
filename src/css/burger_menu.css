@@ -21,7 +21,6 @@
 .burger-menu-wrapper {
   display: flex;
   flex-direction: column;
-  height: 100vh;
 }
 
 .burger-menu-nav {
