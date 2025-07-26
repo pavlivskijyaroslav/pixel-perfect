@@ -1,19 +1,16 @@
-<footer class="footer">
+<!-- <footer class="footer">
   <div class="footer__container container">
-    <div class="footer__block">
+    <div class="footer__left">
       <a class="footer__logo">
         <svg class="footer__logo-item" width="36" height="84">
           Footer Logo
           <use href="../image/sprite/icons.svg#icon-logo"></use>
         </svg>
       </a>
-      <div class="footer__text">
-        <p>
-          Subscribe to our newsletter for the latest updates on our yoga clases
-          and events.
-        </p>
-      </div>
-
+      <p class="footer__text">
+        Subscribe to our newsletter for the latest updates on our yoga clases
+        and events.
+      </p>
       <div class="footer__subscribe">
         <form class="subscribe__form">
           <input
@@ -25,14 +22,14 @@
           />
           <button type="submit" class="button button__primary">Join</button>
         </form>
-      </div>
-      <div class="footer__text-privacy">
-        <p>
+        <p class="footer__text-privacy">
           By subscribing, you consent to our
           <a href="#">Privacy Policy</a> and agree to receive updates.
         </p>
       </div>
+      <p class="footer__studio">© 2025 Yoga Studio. All rights reserved.</p>
     </div>
+
     <div class="footer__columns">
       <div class="footer__block">
         <div class="footer__title">Quick Links</div>
@@ -55,7 +52,7 @@
       </div>
 
       <div class="footer__block">
-        <div class="footer__title">Connect With Us</div>
+        <p class="footer__title">Connect With Us</p>
         <ul class="footer__social">
           <li>
             <a
@@ -112,6 +109,114 @@
         </ul>
       </div>
     </div>
-    <div class="footer__studio">© 2025 Yoga Studio. All rights reserved.</div>
   </div>
-</footer>
+</footer> -->
+<section class="container">
+  <div class="footer">
+    <div class="footer__block-wrapper">
+      <div class="footer__logo">
+        <svg class="footer__logo-item" width="84" height="36">
+          Footer Logo
+          <use href="/image/sprite/icons.svg#icon-logo"></use>
+        </svg>
+        <p class="footer__text">
+          Subscribe to our newsletter for the latest updates on our yoga clases
+          and events.
+        </p>
+        <div class="form__wrapper">
+          <form class="footer__intup-form">
+            <input
+              type="email"
+              id="user-email"
+              placeholder="Your email here"
+              class="footer__input"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            />
+            <button type="submit" class="button button__primary">Join</button>
+          </form>
+          <p class="footer__text-privacy">
+            By subscribing, you consent to our Privacy Policy and agree to
+            receive updates.
+          </p>
+        </div>
+      </div>
+      <div class="footer__link">
+        <div class="quick__link">
+          <p class="footer__title">Quick Links</p>
+          <ul class="footer__menu">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Yoga Classes</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Team</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Pricing</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div class="connect__link">
+          <p class="footer__title">Connect With Us</p>
+          <ul class="footer__social">
+            <li>
+              <a
+                class="footer-social__link"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="footer__icons" width="24" height="24">
+                  <use href="../image/sprite/icons.svg#icon-facebook"></use>
+                </svg>
+                Facebook
+              </a>
+            </li>
+            <li>
+              <a
+                class="footer-social__link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="footer__icons" width="24" height="24">
+                  <use href="../image/sprite/icons.svg#icon-instagram"></use>
+                </svg>
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a
+                class="footer-social__link"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="footer__icons" width="24" height="24">
+                  <use href="../image/sprite/icons.svg#icon-linkedIn"></use>
+                </svg>
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a
+                class="footer-social__link"
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="footer__icons" width="24" height="24">
+                  <use href="../image/sprite/icons.svg#icon-youtube"></use>
+                </svg>
+                YouTube
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__studio">© 2025 Yoga Studio. All rights reserved.</p>
+    </div>
+  </div>
+</section>
