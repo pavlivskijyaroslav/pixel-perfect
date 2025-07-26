@@ -1,0 +1,183 @@
+.pricing {
+  background-color: #f2fafa;
+}
+
+.card-title {
+  margin-bottom: 8px;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.pricing-content {
+  padding: 64px 16px;
+}
+
+.pricing-card {
+  background-color: #dfebeb;
+  border-radius: 16px;
+  text-align: center;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-price {
+  margin-bottom: 24px;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  font-size: 44px;
+}
+
+.pretitle,
+.description {
+  text-align: center;
+}
+
+.pretitle {
+  margin-bottom: 16px;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.description {
+  margin-bottom: 48px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.pricing-wrapper {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.benefit-item {
+  display: flex;
+  text-align: left;
+  margin-bottom: 16px;
+  gap: 16px;
+  align-items: center;
+}
+
+.benefit-item:last-of-type {
+  margin-bottom: 32px;
+}
+
+.benefit-item p {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.pricing-card .join-btn {
+  margin: auto auto 0;
+  width: 100%;
+}
+
+.tablet-wrapper .join-btn {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1335px) {
+  .title {
+    margin-bottom: 24px;
+  }
+
+  .description {
+    margin-bottom: 24px;
+    font-size: 18px;
+  }
+
+  .pricing-wrapper {
+    gap: 24px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tablet-wrapper .join-btn {
+    display: block;
+  }
+
+  .pricing-card:last-child > .join-btn {
+    display: none;
+  }
+
+  .pricing-card:last-child {
+    grid-column: span 2 / span 2;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px;
+    align-items: center;
+    padding: 86px 16px;
+  }
+
+  .pricing-card:last-child .card-price,
+  .pricing-card:last-child .card-title {
+    margin-bottom: 24px;
+  }
+
+  .pricing-card:last-child .benefit-item:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .card-title {
+    font-size: 22px;
+  }
+
+  .card-price {
+    margin-bottom: 32px;
+    font-size: 72px;
+  }
+}
+
+@media screen and (min-width: 1336px) {
+  .title {
+    margin-bottom: 24px;
+    font-size: 52px;
+  }
+
+  .pretitle {
+    margin-bottom: 16px;
+  }
+
+  .description {
+    margin-bottom: 40px;
+    font-size: 18px;
+  }
+
+  .pricing-content {
+    padding: 112px 64px;
+  }
+
+  .pricing-wrapper {
+    gap: 24px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .pricing-card {
+    padding: 32px;
+  }
+
+  .card-title {
+    font-size: 22px;
+  }
+
+  .card-price {
+    margin-bottom: 32px;
+    font-size: 72px;
+  }
+
+  .tablet-wrapper .join-btn {
+    display: none;
+  }
+
+  .pricing-card:last-child > .join-btn {
+    display: block;
+  }
+}
