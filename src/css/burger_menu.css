@@ -1,0 +1,144 @@
+.burger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: #f2fafa;
+
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.burger-menu-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.burger-menu-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+}
+
+.burger-menu-close {
+  background-color: transparent;
+  border: none;
+  width: 48px;
+  height: 48px;
+}
+
+.burger-menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #c2d9fc;
+  border-radius: 100px;
+  padding: 4px 20px;
+  margin-left: 16px;
+  max-width: 86px;
+  height: 34px;
+  background-color: #c2d9fc;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: #0d0b0a;
+}
+
+.burger-menu-btn-accent {
+  margin-left: 4px;
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .burger-menu-btn {
+    margin-left: 0;
+    max-width: 105px;
+    padding: 8px 20px;
+  }
+
+  .burger-menu-btn-accent {
+    opacity: 1;
+    visibility: visible;
+    width: auto;
+  }
+}
+
+.burger-menu-btn:focus {
+  border-color: rgba(255, 255, 255, 0);
+  background-color: rgba(13, 11, 10, 0.05);
+}
+
+.burger-menu-content {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 0 160px;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .burger-menu-content {
+    max-height: 748px;
+  }
+}
+
+.burger-menu-list-item {
+  padding: 12px 0;
+}
+
+.burger-menu-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #0d0b0a;
+}
+
+.burger-menu-bottom-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 276px;
+
+  border: 1px solid #c2d9fc;
+  border-radius: 100px;
+  padding: 10px 24px;
+  width: 100%;
+  height: 46px;
+  background-color: #c2d9fc;
+
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #0d0b0a;
+  transition: background-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1),
+    border-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.burger-menu-bottom-btn:focus {
+  border-color: rgba(255, 255, 255, 0);
+  background-color: rgba(13, 11, 10, 0.05);
+}
+
+@media (min-width: 768px) {
+  .burger-menu-bottom-btn {
+    max-width: 204px;
+  }
+}
