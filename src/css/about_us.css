@@ -40,6 +40,7 @@
   text-align: center;
   color: #0d0b0a;
   margin-bottom: 20px;
+  white-space: unset;
 }
 .about-list-item-text {
   font-weight: 400;
@@ -88,6 +89,7 @@
 
   .about-list {
     gap: 45px 24px;
+    margin-bottom: 62px;
   }
 
   .about-list-item {
@@ -96,6 +98,7 @@
 
   .about-item-title {
     margin-bottom: 0;
+    white-space: nowrap;
   }
 
   .join-btn-tablet {
@@ -135,6 +138,7 @@
   .about-list {
     display: flex;
     gap: 24px;
+    margin-bottom: 40px;
   }
 
   .about-list-item {
