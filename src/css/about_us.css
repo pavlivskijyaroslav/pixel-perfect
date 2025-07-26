@@ -1,0 +1,147 @@
+/* mobile */
+.about {
+  background-color: #dfebeb;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.about-wrap {
+  margin-bottom: 48px;
+  max-width: 343px;
+  margin-right: 0;
+  margin-left: 0;
+  text-align: center;
+}
+
+.about-title {
+  margin-bottom: 20px;
+}
+.about-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: #0d0b0a;
+}
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+.about-list-item {
+  width: 100%;
+}
+.about-item-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #0d0b0a;
+  margin-bottom: 20px;
+  white-space: unset;
+}
+.about-list-item-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: #0d0b0a;
+}
+
+.join-btn-tablet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 24px;
+  width: 100%;
+  height: 46px;
+}
+
+.about-join-btn-tablet {
+  display: none;
+}
+
+/* tablet */
+
+@media (min-width: 768px) {
+  .about {
+    background-color: #f2fafa;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .about-title {
+    margin-bottom: 24px;
+  }
+
+  .about-wrap {
+    max-width: 704px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+  }
+
+  .about-text {
+    margin-bottom: 40px;
+  }
+
+  .about-list {
+    gap: 45px 24px;
+    margin-bottom: 62px;
+  }
+
+  .about-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .about-item-title {
+    margin-bottom: 0;
+    white-space: nowrap;
+  }
+
+  .join-btn-tablet {
+    padding: 10px 24px;
+    width: 110px;
+    height: 46px;
+    white-space: nowrap;
+    margin: 0 auto;
+  }
+
+  .about-join-btn-tablet {
+    display: inline;
+  }
+  .about-join-btn-mobile {
+    display: none;
+  }
+}
+
+/* desktop */
+@media (min-width: 1336px) {
+  .about {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .about-wrap {
+    max-width: 768px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .about-item-title {
+    margin-bottom: 24px;
+    white-space: wrap;
+  }
+
+  .about-list {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  .about-list-item {
+    width: calc((100% - 3 * 24px) / 4);
+  }
+}
