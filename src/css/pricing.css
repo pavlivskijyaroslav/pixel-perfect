@@ -137,6 +137,9 @@
 }
 
 @media screen and (min-width: 1336px) {
+  .pricing {
+    background-color: #f2fafa;
+  }
   .title {
     margin-bottom: 24px;
     font-size: 52px;
