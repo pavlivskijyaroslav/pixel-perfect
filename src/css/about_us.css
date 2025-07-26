@@ -33,13 +33,13 @@
   width: 100%;
 }
 .about-item-title {
-  white-space: nowrap;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.4;
   letter-spacing: 0.01em;
   text-align: center;
   color: #0d0b0a;
+  margin-bottom: 20px;
 }
 .about-list-item-text {
   font-weight: 400;
@@ -94,6 +94,10 @@
     width: calc((100% - 24px) / 2);
   }
 
+  .about-item-title {
+    margin-bottom: 0;
+  }
+
   .join-btn-tablet {
     padding: 10px 24px;
     width: 110px;
@@ -124,6 +128,7 @@
   }
 
   .about-item-title {
+    margin-bottom: 24px;
     white-space: wrap;
   }
 
