@@ -56,6 +56,11 @@
   background-color: rgba(13, 11, 10, 0.05);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.learn-btn:hover {
+  border: 1px solid #c2d9fc;
+  opacity: 0.5;
+}
+
 .hero-buttons {
   display: flex;
   align-items: center;
@@ -101,9 +106,21 @@
     margin: 0 auto;
     min-height: 684px;
   }
+  .hero-container {
+    padding: 0;
+  }
   .hero-content {
     display: flex;
     padding: 80px 0;
+    gap: 24px;
+  }
+  .hero-title {
+    max-width: 644px;
+    font-size: 72px;
+    width: 100%;
+  }
+  .hero-prg {
+    max-width: 641px;
   }
   .hero-buttons {
     width: 100%;
@@ -115,11 +132,6 @@
   .learn-btn {
     width: 100%;
     max-width: 130px;
-  }
-  .hero-title {
-    max-width: 644px;
-    font-size: 72px;
-    width: 100%;
   }
   .hero-png-btn {
     display: flex;
