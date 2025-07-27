@@ -86,9 +86,7 @@
     font-size: 18px;
     margin-bottom: 32px;
   }
-  /* .hero-join-button,
-  .learn-btn {
-  } */
+
   .hero-buttons {
     max-width: 305px;
     display: flex;
@@ -106,21 +104,17 @@
     margin: 0 auto;
     min-height: 684px;
   }
-  .hero-container {
-    padding: 0;
-  }
+
   .hero-content {
     display: flex;
     padding: 80px 0;
-    gap: 24px;
   }
   .hero-title {
-    max-width: 644px;
+    max-width: 640px;
     font-size: 72px;
-    width: 100%;
   }
   .hero-prg {
-    max-width: 641px;
+    width: 100%;
   }
   .hero-buttons {
     width: 100%;
