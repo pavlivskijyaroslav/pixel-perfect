@@ -1,0 +1,220 @@
+.footer {
+    background: #f8fbfe;
+    padding: 48px 16px;
+    border-radius: 16px;
+}
+
+.footer__block-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.footer__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.form__wrapper {
+    gap: 12px;
+}
+
+.footer__intup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+
+.footer__input {
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 12px;
+    padding: 8px 12px;
+    background-color: rgba(13, 11, 10, 0.05);
+    color: #0D0B0A;
+    outline: transparent;
+    height: 46px;
+    font-size: 16px;
+    line-height: 1.2;
+
+}
+
+.button__primary {
+    height: 46px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 100px;
+    padding: 10px 24px;
+    background-color: rgba(13, 11, 10, 0.05);
+}
+
+.button__primary:hover {
+    opacity: 0.5;
+}
+
+.footer__link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.connect__link {
+    margin-bottom: 48px;
+}
+
+.footer__title {
+    margin-bottom: 12px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.footer__text {
+    font-weight: 400;
+    line-height: 1.6;
+    max-width: 640px;
+        width: 100%;
+}
+
+.footer__text-privacy {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.6;
+    max-width: 640px;
+        width: 100%;
+}
+
+.footer__menu {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer__social {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-social__link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer__studio {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* =========================== Tablet =========================== */
+@media (min-width: 768px) {
+    .footer {
+        padding: 40px 32px;
+    }
+
+    .footer__block-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer__logo {
+        gap: 24px;
+    }
+
+    .footer__link {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 40px;
+    }
+
+    .footer__intup-form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer__input {
+        flex: 1;
+        margin-bottom: 12px;
+        width: 522px;
+    }
+
+    .quick__link {
+        flex: 1;
+    }
+
+    .connect__link {
+        flex: 1;
+    }
+
+    .footer__text-privacy,
+    .footer__text {
+        width: 640px;
+    }
+}
+
+/* =========================== Desktop =========================== */
+@media (min-width: 1336px) {
+
+    .footer {
+        display: flex;
+        padding: 64px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .footer__logo {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .footer__block-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 40px;
+
+    }
+
+    .footer__link {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .footer__studio {
+        order: 3;
+        flex-basis: 100%;
+        margin-top: 24px;
+    }
+
+    .footer__input {
+        flex: 1;
+        margin-bottom: 12px;
+    }
+
+    .footer__text-privacy,
+    .footer__text {
+        width: 595px;
+    }
+
+    .footer__intup-form {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 12px;
+        max-width: 501px;
+        width: 100%;
+    }  
+}
