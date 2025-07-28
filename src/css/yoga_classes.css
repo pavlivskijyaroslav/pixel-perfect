@@ -1,23 +1,23 @@
 .classes {
   background-color: #f2fafa;
+  padding: 64px 0;
 }
 
 .classes-wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding: 64px 16px;
   min-width: 320px;
 }
 
 @media (min-width: 768px) {
-  .classes-wrapper {
-    padding: 40px 32px;
+  .classes {
+    padding: 40px 0;
   }
 }
 
 @media (min-width: 1336px) {
-  .classes-wrapper {
-    padding: 112px 64px;
+  .classes {
+    padding: 112px 0;
   }
 }
 
@@ -179,8 +179,7 @@
   font-size: 16px;
   line-height: 1.6;
   color: #0d0b0a;
-  transition:
-    background-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1),
+  transition: background-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1),
     border-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
