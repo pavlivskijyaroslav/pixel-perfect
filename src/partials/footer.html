@@ -1,10 +1,10 @@
-<section class="container">
+<section class="container" id="contacts">
+  <h2 hidden>Footer</h2>
   <div class="footer">
     <div class="footer__block-wrapper">
       <div class="footer__logo">
-        <a class="logo logo-footer" href="./index.html">
+        <a class="logo logo-footer" href="./index.html" aria-label="logo">
           <svg class="footer__logo-item" width="84" height="36">
-            Footer Logo
             <use href="/image/sprite/icons.svg#icon-logo"></use>
           </svg>
         </a>
@@ -12,17 +12,18 @@
           Subscribe to our newsletter for the latest updates on our yoga clases
           and events.
         </p>
-        <form class="footer__intup-form">
-          <label class="footer-form-label" for="user-email">
+        <form action="#" method="post" class="footer__intup-form">
+          <div class="footer-form-label">
             <input
               type="email"
-              id="user-email"
+              id="user-email-footer"
               placeholder="Your email here"
               class="footer__input"
               pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              required
             />
             <p class="footer-error-text">Enter valid email</p>
-          </label>
+          </div>
           <button type="submit" class="button button__primary">Join</button>
         </form>
         <p class="footer__text-privacy">
@@ -38,16 +39,16 @@
           <p class="footer__title">Quick Links</p>
           <ul class="footer__menu">
             <li class="footer__item">
-              <a class="footer__link" href="#">Yoga Classes</a>
+              <a class="footer__link link-anim" href="#classes">Yoga Classes</a>
             </li>
             <li class="footer__item">
-              <a class="footer__link" href="#">Team</a>
+              <a class="footer__link link-anim" href="#team">Team</a>
             </li>
             <li class="footer__item">
-              <a class="footer__link" href="#">Pricing</a>
+              <a class="footer__link link-anim" href="#pricing">Pricing</a>
             </li>
             <li class="footer__item">
-              <a class="footer__link" href="#">Contacts</a>
+              <a class="footer__link link-anim" href="#contacts">Contacts</a>
             </li>
           </ul>
         </div>
@@ -56,52 +57,52 @@
           <ul class="footer__social">
             <li>
               <a
-                class="footer-social__link"
+                class="footer-social__link link-anim"
                 href="https://www.facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <svg class="footer__icons" width="24" height="24">
-                  <use href="../image/sprite/icons.svg#icon-facebook"></use>
+                  <use href="/image/sprite/icons.svg#icon-facebook"></use>
                 </svg>
                 Facebook
               </a>
             </li>
             <li>
               <a
-                class="footer-social__link"
+                class="footer-social__link link-anim"
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <svg class="footer__icons" width="24" height="24">
-                  <use href="../image/sprite/icons.svg#icon-instagram"></use>
+                  <use href="/image/sprite/icons.svg#icon-instagram"></use>
                 </svg>
                 Instagram
               </a>
             </li>
             <li>
               <a
-                class="footer-social__link"
+                class="footer-social__link link-anim"
                 href="https://www.linkedin.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <svg class="footer__icons" width="24" height="24">
-                  <use href="../image/sprite/icons.svg#icon-linkedIn"></use>
+                  <use href="/image/sprite/icons.svg#icon-linkedIn"></use>
                 </svg>
                 LinkedIn
               </a>
             </li>
             <li>
               <a
-                class="footer-social__link"
+                class="footer-social__link link-anim"
                 href="https://www.youtube.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <svg class="footer__icons" width="24" height="24">
-                  <use href="../image/sprite/icons.svg#icon-youtube"></use>
+                  <use href="/image/sprite/icons.svg#icon-youtube"></use>
                 </svg>
                 YouTube
               </a>
