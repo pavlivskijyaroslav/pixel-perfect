@@ -79,6 +79,9 @@
 .button__primary:active {
     border-color: #868584;
 }
+.btn-anim:hover,
+.btn-anim:focus{background-color: #0d0b0a06;
+    box-shadow: 0 1px 1px #00000024;}
 
 .footer__text-privacy {
     font-size: 12px;
