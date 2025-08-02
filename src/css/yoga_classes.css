@@ -107,12 +107,24 @@
 .classes-list-item {
   display: flex;
   flex-direction: column;
+  transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.classes-list-item:hover,
+.classes-list-item:focus {
+  border-radius: 16px;
+  box-shadow: 2px 2px 10px 0 rgba(23, 58, 86, 0.15);
+  transform: scale(1.05);
 }
 
 @media (min-width: 1336px) {
   .classes-list-item {
     max-width: 421px;
   }
+}
+
+.classes-visual {
+  border-radius: 16px;
 }
 
 .classes-list-item-title {
@@ -124,6 +136,12 @@
   letter-spacing: 0.01em;
   text-align: center;
   color: #0d0b0a;
+  transition: color 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.classes-list-item:hover .classes-list-item-title,
+.classes-list-item:focus .classes-list-item-title {
+  color: #c07a62;
 }
 
 @media (min-width: 768px) {
@@ -147,6 +165,12 @@
   line-height: 1.6;
   text-align: center;
   color: #0d0b0a;
+  transition: color 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.classes-list-item:hover .classes-list-item-text,
+.classes-list-item:focus .classes-list-item-text {
+  color: #c07a62;
 }
 
 @media (min-width: 768px) {
@@ -179,15 +203,12 @@
   font-size: 16px;
   line-height: 1.6;
   color: #0d0b0a;
-  transition:
-    background-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1),
-    border-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: opacity 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .classes-btn:hover,
 .classes-btn:focus {
-  border-color: rgba(255, 255, 255, 0);
-  background-color: rgba(13, 11, 10, 0.05);
+  opacity: 0.5;
 }
 
 @media (min-width: 768px) {
